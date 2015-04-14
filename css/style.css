@@ -46,9 +46,12 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-section {
+body {
     background-color: LightGray;
 }
-div {
+section {
     border: 1px solid Chocolate;
+}
+div {
+    border: 1px solid green;
 }
