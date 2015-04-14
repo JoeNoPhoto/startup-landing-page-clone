@@ -55,3 +55,8 @@ section {
 div {
     border: 1px solid green;
 }
+
+.logo {
+    /*list-style-type: none;*/
+    height: 60px;
+}
