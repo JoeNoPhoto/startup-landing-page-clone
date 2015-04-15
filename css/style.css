@@ -63,8 +63,9 @@ section {
 {
     display: flex;  /* From how I understand it, flex and inline-flex are an updated version of block and inline-block */
 }
-
- /* BEGINNING OF NAVIGATION BAR */
+/*******************************/
+/* BEGINNING OF NAVIGATION BAR */
+/*******************************/
 .topNav{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -119,10 +120,37 @@ section {
     height: 70px;
     width: 27px;
 }
+/**************************/
+/*  END OF NAVIGATION BAR */
+/**************************/
 
+/*************************************/
+/*  BEGINNING OF INTRODUCTION MODULE */
+/*************************************/
 .introModule {
-    margin-top: 70px;
+    margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
     background-image: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
 }
 
-/*  END OF NAVIGATION BAR */
+
+
+
+/*******************************/
+/*  END OF INTRODUCTION MODULE */
+/*******************************/
+
+/***************************************/
+/*  START OF "WHAT DO THEY DO?" MODULE */
+/***************************************/
+
+/************************************/
+/* END OF "WHAT DO THEY DO?" MODULE */
+/************************************/
+
+/***************************/
+/*  START OF FOOTER MODULE */
+/***************************/
+
+/************************/
+/* END OF FOOTER MODULE */
+/************************/
