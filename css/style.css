@@ -1,6 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http: //meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
-   License:none (public domain)
+   License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,45 +16,44 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    font-size:100%;
-    font:inherit;
-    vertical-align:baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display:block;
+    display: block;
 }
 body {
-    line-height:1;
+    line-height: 1;
 }
 ol, ul {
-    list-style:none;
+    list-style: none;
 }
 blockquote, q {
-    quotes:none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+blockquote: before, blockquote: after,
+q: before, q: after {
+    content: '';
+    content: none;
 }
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 body{
-    font-family:'Roboto', sans-serif;
-    text-align:center;
-    background-color:LightGray;
+    background-color: LightGray;
+    text-align: center;
 }
 
 section {
-    border:1px solid brown;
+    border: 1px solid brown;
 }
 
 .topNav,
@@ -62,10 +61,13 @@ section {
 .navAssetContainer,
 .navLinks
 {
-    display:flex;  /* From how I understand it, flex and inline-flex are an updated version of block and inline-block */
+    display: flex;  /* From how I understand it, flex and inline-flex are an updated version of block and inline-block */
 }
 
 .topNav{
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #838994;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,38 +75,39 @@ section {
     width: 100%;
     height: 70px;
     background-color: white;
+
+    font-size: 1.04rem;
 }
 
 /*Logo & Link container*/
 .navAssetContainer {
-    padding:0 1.5%;   /* sets the padding of the interior container */
-    margin:0 auto;    /* centers the container to the middle of the screen */
-    width:57.5%;
-    height:70px;
-    flex-flow:row-reverse nowrap;
-    justify-content: space-between;
+    padding: 0 1.5%;   /* sets the padding of the interior container */
+    margin: 0 auto;    /* centers the container to the middle of the screen */
+    width: 57.5%;
+    height: 70px;
+    flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front
+                                        nowrap keeps them on the same line*/
+    justify-content: space-between; /**/
 }
 
 /*link container*/
 .navLinkContainer {
-    margin:auto 0;
-    flex-wrap:nowrap;
+    margin: auto 0;
+    flex-wrap: nowrap;
 }
 
 /*navigation links*/
 .navLinks {
-    margin-left:25px;
-    color: #838994;
+    margin-left: 25px;
 }
 
 /*logo, duh*/
 .logo {
-    height:70px;
-    width:27px;
+    height: 70px;
+    width: 27px;
 }
 
 .activeLink {
-    font-size: 1em;
     color: #4c5058;
     font-weight: 500;
 }
