@@ -64,7 +64,7 @@ section {
     display: flex;  /* From how I understand it, flex and inline-flex are an updated version of block and inline-block */
 }
 
- /* Navigation bar */
+ /* BEGINNING OF NAVIGATION BAR */
 .topNav{
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -98,8 +98,9 @@ section {
     width: 57.5%;
     height: 70px;
     flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front
-                                        nowrap keeps them on the same line*/
-    justify-content: space-between; /**/
+                                       nowrap keeps them on the same line*/
+    justify-content: space-between; /* Positions the logo and the link container
+                                       on opposite sites of the group container*/
 }
 
 /*link container*/
@@ -119,6 +120,9 @@ section {
     width: 27px;
 }
 
-.module1 {
+.introModule {
     margin-top: 70px;
+    background-image: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
 }
+
+/*  END OF NAVIGATION BAR */
