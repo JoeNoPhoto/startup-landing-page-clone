@@ -173,13 +173,14 @@ section {
 .introButtonContainer {
     padding: 7.5px;
 }
-.introModule, .introButton {
+.introModule, .bigButton {
     color: white;
 }
 
 
 .introHead {
     font-size: 3em;
+
 }
 
 .introSubhead {
@@ -187,18 +188,28 @@ section {
 
 }
 
-.introButton {
+.introHead,
+.introSubhead {
+    font-weight: 300;
+}
+
+.bigButton {
 
    background-color: #f15a29;
    max-width: 30%;
    border-color: #f15a29;
    border-radius: 4px;
    border-style: none;
-   padding: 1em 1.5em;
+   padding: 16px 24px;
    font-size: 1em;
+   line-height: 1.33em;
 }
 
-
+:hover {
+    cursor: pointer;
+    background-color: #f15a29;
+    border-color: #f15a29;
+}
 /*******************************/
 /*  END OF INTRODUCTION MODULE */
 /*******************************/
