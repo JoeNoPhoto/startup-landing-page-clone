@@ -14,35 +14,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-display: block;
+	display: block;
 }
 body {
-line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-list-style: none;
+	list-style: none;
 }
 blockquote, q {
-quotes: none;
+	quotes: none;
 }
 blockquote: before, blockquote: after,
 q: before, q: after {
-content: '';
-content: none;
+	content: '';
+	content: none;
 }
 table {
-border-collapse: collapse;
-border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 /*****************/
 /* END CSS RESET */
@@ -52,25 +52,33 @@ border-spacing: 0;
 /* GLOBALS */
 /***********/
 body {
-		font-family: 'Roboto', sans-serif;
-		-webkit-font-smoothing: antialiased;
-		font-size: 1.04rem;
-		font-weight: 300;
-		text-align: center;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 1.04rem;
+	font-weight: 300;
+	text-align: center;
 }
 
-.textHeader,
-.textSubheader {
-		font-weight: 300;
+.main, .sub {
+	font-weight: 300;
 }
 
-.textHeader{
-		font-size: 3em;
+.main{
+	font-size: 3em;
+}
 
+.sub {
+	font-size: 1.563em;
 }
-.textSubheader {
-		font-size: 1.563em;
+
+.mainContain {
+	border: 3px solid pink;
 }
+
+.introModule, .theWhatModule {
+	height: 659px;
+}
+
 /***************/
 /* END GLOBALS */
 /***************/
@@ -79,14 +87,14 @@ body {
 /* NAVIGATION BAR */
 /******************/
 .topNav{
-		/* Fixed Nav POsition Code */
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 9999;
-		width: 100%;
-		height: 70px;
-		background-color: white;
+	/* Fixed Nav POsition Code */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 70px;
+	background-color: white;
 }
 
 .topNav,
@@ -94,54 +102,59 @@ body {
 .navAssetContain,
 .navLinks
 {
-		display: flex;  /* 	From how I understand it, flex and inline-flex are an updated version of block and inline-block? */
+	display: flex;  /* 	From how I understand it, flex and inline-flex are an updated version of block and inline-block? */
 }
 /*logo, duh*/
 .logo {
-		height: 70px;
-		width: 27px;
+	height: 70px;
+	width: 27px;
 }
 
 /*Logo & Link container*/
 .navAssetContain {
-		padding: 0 1.5%;   /* sets the padding of the interior container */
-		margin: 0 auto;    /* centers the container to the middle of the screen */
-		width: 57.5%;
-		height: 70px;
-		flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front nowrap keeps them on the same line*/
-		justify-content: space-between; /* Positions the logo and the link container on opposite sites of the group container*/
+	padding: 0 1.5%;   /* sets the padding of the interior container */
+	margin: 0 auto;    /* centers the container to the middle of the screen */
+	width: 57.5%;
+	height: 70px;
+	flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front nowrap keeps them on the same line*/
+	justify-content: space-between; /* Positions the logo and the link container on opposite sites of the group container*/
 }
 
 /*navigation links*/
 .navLinks {
-		margin-left: 25px;
+	margin-left: 25px;
 }
 
 /*link container*/
 .navLinkContain {
-		margin: auto 0;
-		flex-wrap: nowrap;
+	margin: auto 0;
+	flex-wrap: nowrap;
 }
 
-.linkDecoration:link, .linkDecoration:visited, .activeLink:link, .activeLink:visited {
-		text-decoration: none;
+.linkDecoration:link,
+.linkDecoration:visited,
+.activeLink:link,
+.activeLink:visited {
+	text-decoration: none;
 }
 
-.linkDecoration:link, .linkDecoration:visited
+.linkDecoration:link,
+.linkDecoration:visited
 {
-		color: #838994;
-
+	color: #838994;
 }
 
 /* higlight links on hover */
 .navLinks > .linkDecoration:hover {
-		cursor: pointer;
-		color: #333333;
+	cursor: pointer;
+	color: #333333;
 }
 /* bold the active web page link */
-.activeLink:link, .activeLink:visited, .activeLink > .linkDecoration:hover {
-		color: #4c5058;
-		font-weight: 500;
+.activeLink:link,
+.activeLink:visited,
+.activeLink > .linkDecoration:hover {
+	color: #4c5058;
+	font-weight: 500;
 }
 /**************************/
 /*  END NAVIGATION BAR */
@@ -151,53 +164,45 @@ body {
 /*  INTRODUCTION MODULE */
 /************************/
 .introModule {
-
-		margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
-		background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: bottom center;
-		height: 659px;
-		color: white;
-
+	margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
+	background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	height: 659px;
+	color: white;
 }
 
-.introModule,
-.intro .HeadContain,
-.intro .SubheadContain,
-.intro .ButtonContain
-{
-		display: flex;              /* These 3 lines allowed me      */
-		align-items: center;        /* to center the .introContain */
-		justify-content: center;    /* within this .introModule      */
+.introModule {
+	display: flex;              /* These 3 lines allowed me      */
+	align-items: center;        /* to center the .introContain */
+	justify-content: center;    /* within this .introModule      */
 }
 
 .intro {
-		padding: 7.5px;
-		border: 1px solid lawngreen;
+	padding: 7.5px;
+	border: 1px solid lawngreen;
 }
-.introModule, .bigButton {
-		color: white;
-}
-
-
-
 
 .bigButton {
-	 background-color: #f15a29;
-	 border-color: #f15a29;
-	 border-radius: 4px;
-	 border-style: none;
-	 width: 160px;
-	 padding: 16px 24px;
-	 font-size: 1.125em;
-	 line-height: 1.33em;
+	color: white;
+}
+
+.bigButton {
+	background-color: #f15a29;
+	border-color: #f15a29;
+	border-radius: 4px;
+	border-style: none;
+	width: 160px;
+	padding: 16px 24px;
+	font-size: 1.125em;
+	line-height: 1.33em;
 }
 
 .bigButton:hover {
-		cursor: pointer;
-		background-color: #d9400e;
-		border-color: #cf3d0e;
+	cursor: pointer;
+	background-color: #d9400e;
+	border-color: #cf3d0e;
 }
 /****************************/
 /*  END INTRODUCTION MODULE */
@@ -206,7 +211,35 @@ body {
 /******************************/
 /*  "WHAT DO THEY DO?" MODULE */
 /******************************/
+.theWhatModule > * {
+	display: flex;              /*  These 3 lines allowed me     */
+	align-items: center;        /*  to center the .introContain	 */
+	justify-content: center;		/*	within this .introModule     */
+	flex-flow: column nowrap;
+  flex: 1 100%;
+}
 
+.icon {
+	border: 1px solid darkgreen;
+	padding: 7.5px;
+	width: 127px;
+	display: inline-flex;
+	flex: 1 auto;
+
+}
+.fullContain{
+	display: inline-flex;
+	flex-flow: column;
+	align-items: center;
+	border: 1px solid blue;
+}
+.headerContain{
+	display: flex;
+	border: 1px solid red;
+}
+.mainContain{
+	border: 1px solid magenta;
+}
 /*********************************/
 /* END "WHAT DO THEY DO?" MODULE */
 /*********************************/
