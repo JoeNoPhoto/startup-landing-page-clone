@@ -1,6 +1,6 @@
 /* http: //meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,39 +16,45 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+display: block;
 }
 body {
-    line-height: 1;
+line-height: 1;
 }
 ol, ul {
-    list-style: none;
+list-style: none;
 }
 blockquote, q {
-    quotes: none;
+quotes: none;
 }
 blockquote: before, blockquote: after,
 q: before, q: after {
-    content: '';
-    content: none;
+content: '';
+content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
+/************************/
+/* BEGINNING OF GLOBALS */
+/************************/
 body{
-    background-color: LightGray;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.04rem;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -61,15 +67,18 @@ section {
 .navAssetContainer,
 .navLinks
 {
-    display: flex;  /* From how I understand it, flex and inline-flex are an updated version of block and inline-block */
+    display: flex;  /* From how I understand it, flex and inline-flex
+                        are an updated version of block and inline-block? */
 }
+/******************/
+/* END OF GLOBALS */
+/******************/
+
 /*******************************/
 /* BEGINNING OF NAVIGATION BAR */
 /*******************************/
 .topNav{
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #838994;
+    /* Fixed Nav POsition Code */
     position: fixed;
     top: 0;
     left: 0;
@@ -77,19 +86,12 @@ section {
     width: 100%;
     height: 70px;
     background-color: white;
-    font-size: 1.04rem;
 }
 
-/* bold the active web page link */
-.activeLink {
-    color: #4c5058;
-    font-weight: 500;
-}
-
-/* higlight links on hover */
-.navLinks:hover {
-    cursor: pointer;
-    color: #333333;
+/*logo, duh*/
+.logo {
+    height: 70px;
+    width: 27px;
 }
 
 /*Logo & Link container*/
@@ -104,22 +106,40 @@ section {
                                        on opposite sites of the group container*/
 }
 
+/*navigation links*/
+.navLinks {
+    margin-left: 25px;
+}
+
 /*link container*/
 .navLinkContainer {
     margin: auto 0;
     flex-wrap: nowrap;
 }
 
-/*navigation links*/
-.navLinks {
-    margin-left: 25px;
+.linkDecoration:link, .linkDecoration:visited, .activeLink:link, .activeLink:visited {
+    text-decoration: none;
 }
 
-/*logo, duh*/
-.logo {
-    height: 70px;
-    width: 27px;
+.linkDecoration:link, .linkDecoration:visited
+{
+    color: #838994;
+
 }
+
+/* higlight links on hover */
+.navLinks > .linkDecoration:hover {
+    cursor: pointer;
+    color: #333333;
+
+
+}
+/* bold the active web page link */
+.activeLink:link, .activeLink:visited, .activeLink > .linkDecoration:hover {
+    color: #4c5058;
+    font-weight: 500;
+}
+
 /**************************/
 /*  END OF NAVIGATION BAR */
 /**************************/
@@ -128,11 +148,55 @@ section {
 /*  BEGINNING OF INTRODUCTION MODULE */
 /*************************************/
 .introModule {
+
     margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
-    background-image: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
+    background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 41.2rem;
+
+}
+
+.introModule,
+.introHeadContainer,
+.introSubheadContainer,
+.introButtonContainer
+{
+    display: flex;              /* These 3 lines allowed me      */
+    align-items: center;        /* to center the .introContainer */
+    justify-content: center;    /* within this .introModule      */
+}
+
+.introHeadContainer,
+.introSubheadContainer,
+.introButtonContainer {
+    padding: 7.5px;
+}
+.introModule, .introButton {
+    color: white;
 }
 
 
+.introHead {
+    font-size: 3em;
+}
+
+.introSubhead {
+    font-size: 1.563em;
+
+}
+
+.introButton {
+
+   background-color: #f15a29;
+   max-width: 30%;
+   border-color: #f15a29;
+   border-radius: 4px;
+   border-style: none;
+   padding: 1em 1.5em;
+   font-size: 1em;
+}
 
 
 /*******************************/
