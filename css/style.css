@@ -1,8 +1,6 @@
-/* http: //meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-
+/*************/
+/* CSS RESET */
+/*************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,10 +44,13 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
+/*****************/
+/* END CSS RESET */
+/*****************/
 
-/************************/
-/* BEGINNING OF GLOBALS */
-/************************/
+/***********/
+/* GLOBALS */
+/***********/
 body{
 		font-family: 'Roboto', sans-serif;
 		-webkit-font-smoothing: antialiased;
@@ -58,25 +59,21 @@ body{
 		text-align: center;
 }
 
+.textHead,
+.textSubhead {
+		font-weight: 300;
+}
+
 section {
 		border: 1px solid brown;
 }
+/***************/
+/* END GLOBALS */
+/***************/
 
-.topNav,
-.navLinkContainer,
-.navAssetContainer,
-.navLinks
-{
-		display: flex;  /* From how I understand it, flex and inline-flex
-												are an updated version of block and inline-block? */
-}
 /******************/
-/* END OF GLOBALS */
+/* NAVIGATION BAR */
 /******************/
-
-/*******************************/
-/* BEGINNING OF NAVIGATION BAR */
-/*******************************/
 .topNav{
 		/* Fixed Nav POsition Code */
 		position: fixed;
@@ -88,6 +85,13 @@ section {
 		background-color: white;
 }
 
+.topNav,
+.navLinkContain,
+.navAssetContain,
+.navLinks
+{
+		display: flex;  /* 	From how I understand it, flex and inline-flex are an updated version of block and inline-block? */
+}
 /*logo, duh*/
 .logo {
 		height: 70px;
@@ -95,15 +99,13 @@ section {
 }
 
 /*Logo & Link container*/
-.navAssetContainer {
+.navAssetContain {
 		padding: 0 1.5%;   /* sets the padding of the interior container */
 		margin: 0 auto;    /* centers the container to the middle of the screen */
 		width: 57.5%;
 		height: 70px;
-		flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front
-																			 nowrap keeps them on the same line*/
-		justify-content: space-between; /* Positions the logo and the link container
-																			 on opposite sites of the group container*/
+		flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front nowrap keeps them on the same line*/
+		justify-content: space-between; /* Positions the logo and the link container on opposite sites of the group container*/
 }
 
 /*navigation links*/
@@ -112,7 +114,7 @@ section {
 }
 
 /*link container*/
-.navLinkContainer {
+.navLinkContain {
 		margin: auto 0;
 		flex-wrap: nowrap;
 }
@@ -131,22 +133,19 @@ section {
 .navLinks > .linkDecoration:hover {
 		cursor: pointer;
 		color: #333333;
-
-
 }
 /* bold the active web page link */
 .activeLink:link, .activeLink:visited, .activeLink > .linkDecoration:hover {
 		color: #4c5058;
 		font-weight: 500;
 }
-
 /**************************/
-/*  END OF NAVIGATION BAR */
+/*  END NAVIGATION BAR */
 /**************************/
 
-/*************************************/
-/*  BEGINNING OF INTRODUCTION MODULE */
-/*************************************/
+/************************/
+/*  INTRODUCTION MODULE */
+/************************/
 .introModule {
 
 		margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
@@ -159,18 +158,18 @@ section {
 }
 
 .introModule,
-.introHeadContainer,
-.introSubheadContainer,
-.introButtonContainer
+.introHeadContain,
+.introSubheadContain,
+.introButtonContain
 {
 		display: flex;              /* These 3 lines allowed me      */
-		align-items: center;        /* to center the .introContainer */
+		align-items: center;        /* to center the .introContain */
 		justify-content: center;    /* within this .introModule      */
 }
 
-.introHeadContainer,
-.introSubheadContainer,
-.introButtonContainer {
+.introHeadContain,
+.introSubheadContain,
+.introButtonContain {
 		padding: 7.5px;
 }
 .introModule, .bigButton {
@@ -186,11 +185,6 @@ section {
 .introSubhead {
 		font-size: 1.563em;
 
-}
-
-.introHead,
-.introSubhead {
-		font-weight: 300;
 }
 
 .bigButton {
@@ -209,22 +203,22 @@ section {
 		background-color: #d9400e;
 		border-color: #cf3d0e;
 }
-/*******************************/
-/*  END OF INTRODUCTION MODULE */
-/*******************************/
+/****************************/
+/*  END INTRODUCTION MODULE */
+/****************************/
 
-/***************************************/
-/*  START OF "WHAT DO THEY DO?" MODULE */
-/***************************************/
+/******************************/
+/*  "WHAT DO THEY DO?" MODULE */
+/******************************/
 
-/************************************/
-/* END OF "WHAT DO THEY DO?" MODULE */
-/************************************/
+/*********************************/
+/* END "WHAT DO THEY DO?" MODULE */
+/*********************************/
 
-/***************************/
-/*  START OF FOOTER MODULE */
-/***************************/
+/******************/
+/*  FOOTER MODULE */
+/******************/
 
-/************************/
-/* END OF FOOTER MODULE */
-/************************/
+/*********************/
+/* END FOOTER MODULE */
+/*********************/
