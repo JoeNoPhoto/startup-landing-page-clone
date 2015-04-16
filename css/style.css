@@ -51,15 +51,15 @@ border-spacing: 0;
 /* BEGINNING OF GLOBALS */
 /************************/
 body{
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1.04rem;
-    font-weight: 300;
-    text-align: center;
+		font-family: 'Roboto', sans-serif;
+		-webkit-font-smoothing: antialiased;
+		font-size: 1.04rem;
+		font-weight: 300;
+		text-align: center;
 }
 
 section {
-    border: 1px solid brown;
+		border: 1px solid brown;
 }
 
 .topNav,
@@ -67,8 +67,8 @@ section {
 .navAssetContainer,
 .navLinks
 {
-    display: flex;  /* From how I understand it, flex and inline-flex
-                        are an updated version of block and inline-block? */
+		display: flex;  /* From how I understand it, flex and inline-flex
+												are an updated version of block and inline-block? */
 }
 /******************/
 /* END OF GLOBALS */
@@ -78,66 +78,66 @@ section {
 /* BEGINNING OF NAVIGATION BAR */
 /*******************************/
 .topNav{
-    /* Fixed Nav POsition Code */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 70px;
-    background-color: white;
+		/* Fixed Nav POsition Code */
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		width: 100%;
+		height: 70px;
+		background-color: white;
 }
 
 /*logo, duh*/
 .logo {
-    height: 70px;
-    width: 27px;
+		height: 70px;
+		width: 27px;
 }
 
 /*Logo & Link container*/
 .navAssetContainer {
-    padding: 0 1.5%;   /* sets the padding of the interior container */
-    margin: 0 auto;    /* centers the container to the middle of the screen */
-    width: 57.5%;
-    height: 70px;
-    flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front
-                                       nowrap keeps them on the same line*/
-    justify-content: space-between; /* Positions the logo and the link container
-                                       on opposite sites of the group container*/
+		padding: 0 1.5%;   /* sets the padding of the interior container */
+		margin: 0 auto;    /* centers the container to the middle of the screen */
+		width: 57.5%;
+		height: 70px;
+		flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front
+																			 nowrap keeps them on the same line*/
+		justify-content: space-between; /* Positions the logo and the link container
+																			 on opposite sites of the group container*/
 }
 
 /*navigation links*/
 .navLinks {
-    margin-left: 25px;
+		margin-left: 25px;
 }
 
 /*link container*/
 .navLinkContainer {
-    margin: auto 0;
-    flex-wrap: nowrap;
+		margin: auto 0;
+		flex-wrap: nowrap;
 }
 
 .linkDecoration:link, .linkDecoration:visited, .activeLink:link, .activeLink:visited {
-    text-decoration: none;
+		text-decoration: none;
 }
 
 .linkDecoration:link, .linkDecoration:visited
 {
-    color: #838994;
+		color: #838994;
 
 }
 
 /* higlight links on hover */
 .navLinks > .linkDecoration:hover {
-    cursor: pointer;
-    color: #333333;
+		cursor: pointer;
+		color: #333333;
 
 
 }
 /* bold the active web page link */
 .activeLink:link, .activeLink:visited, .activeLink > .linkDecoration:hover {
-    color: #4c5058;
-    font-weight: 500;
+		color: #4c5058;
+		font-weight: 500;
 }
 
 /**************************/
@@ -149,12 +149,12 @@ section {
 /*************************************/
 .introModule {
 
-    margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
-    background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    height: 41.2rem;
+		margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
+		background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: bottom center;
+		height: 41.2rem;
 
 }
 
@@ -163,52 +163,51 @@ section {
 .introSubheadContainer,
 .introButtonContainer
 {
-    display: flex;              /* These 3 lines allowed me      */
-    align-items: center;        /* to center the .introContainer */
-    justify-content: center;    /* within this .introModule      */
+		display: flex;              /* These 3 lines allowed me      */
+		align-items: center;        /* to center the .introContainer */
+		justify-content: center;    /* within this .introModule      */
 }
 
 .introHeadContainer,
 .introSubheadContainer,
 .introButtonContainer {
-    padding: 7.5px;
+		padding: 7.5px;
 }
 .introModule, .bigButton {
-    color: white;
+		color: white;
 }
 
 
 .introHead {
-    font-size: 3em;
+		font-size: 3em;
 
 }
 
 .introSubhead {
-    font-size: 1.563em;
+		font-size: 1.563em;
 
 }
 
 .introHead,
 .introSubhead {
-    font-weight: 300;
+		font-weight: 300;
 }
 
 .bigButton {
-
-   background-color: #f15a29;
-   max-width: 30%;
-   border-color: #f15a29;
-   border-radius: 4px;
-   border-style: none;
-   padding: 16px 24px;
-   font-size: 1em;
-   line-height: 1.33em;
+	 background-color: #f15a29;
+	 border-color: #f15a29;
+	 border-radius: 4px;
+	 border-style: none;
+	 width: 160px;
+	 padding: 16px 24px;
+	 font-size: 1.125em;
+	 line-height: 1.33em;
 }
 
-:hover {
-    cursor: pointer;
-    background-color: #f15a29;
-    border-color: #f15a29;
+.bigButton:hover {
+		cursor: pointer;
+		background-color: #d9400e;
+		border-color: #cf3d0e;
 }
 /*******************************/
 /*  END OF INTRODUCTION MODULE */
