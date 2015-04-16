@@ -51,7 +51,7 @@ border-spacing: 0;
 /***********/
 /* GLOBALS */
 /***********/
-body{
+body {
 		font-family: 'Roboto', sans-serif;
 		-webkit-font-smoothing: antialiased;
 		font-size: 1.04rem;
@@ -59,13 +59,17 @@ body{
 		text-align: center;
 }
 
-.textHead,
-.textSubhead {
+.textHeader,
+.textSubheader {
 		font-weight: 300;
 }
 
-section {
-		border: 1px solid brown;
+.textHeader{
+		font-size: 3em;
+
+}
+.textSubheader {
+		font-size: 1.563em;
 }
 /***************/
 /* END GLOBALS */
@@ -153,39 +157,31 @@ section {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: bottom center;
-		height: 41.2rem;
+		height: 659px;
+		color: white;
 
 }
 
 .introModule,
-.introHeadContain,
-.introSubheadContain,
-.introButtonContain
+.intro .HeadContain,
+.intro .SubheadContain,
+.intro .ButtonContain
 {
 		display: flex;              /* These 3 lines allowed me      */
 		align-items: center;        /* to center the .introContain */
 		justify-content: center;    /* within this .introModule      */
 }
 
-.introHeadContain,
-.introSubheadContain,
-.introButtonContain {
+.intro {
 		padding: 7.5px;
+		border: 1px solid lawngreen;
 }
 .introModule, .bigButton {
 		color: white;
 }
 
 
-.introHead {
-		font-size: 3em;
 
-}
-
-.introSubhead {
-		font-size: 1.563em;
-
-}
 
 .bigButton {
 	 background-color: #f15a29;
