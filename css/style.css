@@ -1,3 +1,5 @@
+
+
 /*************/
 /* CSS RESET */
 /*************/
@@ -59,24 +61,26 @@ body {
 	text-align: center;
 }
 
-.main, .sub {
+.headText{
 	font-weight: 300;
-}
-
-.main{
 	font-size: 3em;
 }
 
-.sub {
+.subText {
 	font-size: 1.563em;
 }
 
-.mainContain {
+.introContain {
 	border: 3px solid pink;
 }
 
 .introModule, .theWhatModule {
 	height: 659px;
+}
+.introModule, .theWhatModule {
+	display: flex;              /* These 3 lines allowed me    */
+	align-items: center;        /* Place the content container in		*/
+	justify-content: center;    /* the dead center of the module		*/
 }
 
 /***************/
@@ -173,17 +177,6 @@ body {
 	color: white;
 }
 
-.introModule {
-	display: flex;              /* These 3 lines allowed me      */
-	align-items: center;        /* to center the .introContain */
-	justify-content: center;    /* within this .introModule      */
-}
-
-.intro {
-	padding: 7.5px;
-	border: 1px solid lawngreen;
-}
-
 .bigButton {
 	color: white;
 }
@@ -211,34 +204,45 @@ body {
 /******************************/
 /*  "WHAT DO THEY DO?" MODULE */
 /******************************/
-.theWhatModule > * {
-	display: flex;              /*  These 3 lines allowed me     */
-	align-items: center;        /*  to center the .introContain	 */
-	justify-content: center;		/*	within this .introModule     */
-	flex-flow: column nowrap;
-  flex: 1 100%;
-}
-
 .icon {
-	border: 1px solid darkgreen;
+	border: 1px solid orangered;
 	padding: 7.5px;
 	width: 127px;
 	display: inline-flex;
 	flex: 1 auto;
+}
+
+.theWhat.subText{
+	font-weight: 400;
+	margin: 40px;
+	border: 1px solid orangered;
+}
+
+.innerContain {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	border: 1px solid orangered;
 
 }
-.fullContain{
+.groupContain {
 	display: inline-flex;
-	flex-flow: column;
-	align-items: center;
-	border: 1px solid blue;
+	margin: 5px; /*remove*/
+	border: 5px solid purple;
 }
-.headerContain{
-	display: flex;
-	border: 1px solid red;
+
+.totalContain {
+	display: inline-flex;
+	align-items: center;        /*  to center the .introContain	 */
+	justify-content: center;		/*	within this .introModule     */
+	flex-flow: column wrap;
+	margin: 5px; /*remove*/
+	border: 5px solid red;
+	min-width: 1000px;
 }
-.mainContain{
-	border: 1px solid magenta;
+
+.groupIconTextContain{
+	border: 1px solid purple;
 }
 /*********************************/
 /* END "WHAT DO THEY DO?" MODULE */
