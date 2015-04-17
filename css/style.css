@@ -50,6 +50,18 @@ table {
 /* END CSS RESET */
 /*****************/
 
+/*********************************/
+/* CONTAINER BORDERS FOR TESTING */
+/*********************************/
+.intro-container {
+	border: 3px solid pink;
+}
+
+/*************************************/
+/* END CONTAINER BORDERS FOR TESTING */
+/*************************************/
+
+
 /***********/
 /* GLOBALS */
 /***********/
@@ -61,23 +73,21 @@ body {
 	text-align: center;
 }
 
-.headText{
+.head-text{
 	font-weight: 300;
 	font-size: 3em;
 }
 
-.subText {
+.sub-text {
 	font-size: 1.563em;
 }
 
-.introContain {
-	border: 3px solid pink;
-}
 
-.introModule, .theWhatModule {
+
+.intro-module, .the-what-module {
 	height: 659px;
 }
-.introModule, .theWhatModule {
+.intro-module, .the-what-module {
 	display: flex;              /* These 3 lines allowed me    */
 	align-items: center;        /* Place the content container in		*/
 	justify-content: center;    /* the dead center of the module		*/
@@ -90,7 +100,7 @@ body {
 /******************/
 /* NAVIGATION BAR */
 /******************/
-.topNav{
+.top-nav{
 	/* Fixed Nav POsition Code */
 	position: fixed;
 	top: 0;
@@ -101,10 +111,10 @@ body {
 	background-color: white;
 }
 
-.topNav,
-.navLinkContain,
-.navAssetContain,
-.navLinks
+.top-nav,
+.nav-link-container,
+.nav-asset-container,
+.nav-links
 {
 	display: flex;  /* 	From how I understand it, flex and inline-flex are an updated version of block and inline-block? */
 }
@@ -115,7 +125,7 @@ body {
 }
 
 /*Logo & Link container*/
-.navAssetContain {
+.nav-asset-container {
 	padding: 0 1.5%;   /* sets the padding of the interior container */
 	margin: 0 auto;    /* centers the container to the middle of the screen */
 	width: 57.5%;
@@ -125,38 +135,38 @@ body {
 }
 
 /*navigation links*/
-.navLinks {
+.nav-links {
 	margin-left: 25px;
 }
 
 /*link container*/
-.navLinkContain {
+.nav-link-container {
 	margin: auto 0;
 	flex-wrap: nowrap;
 }
 
-.linkDecoration:link,
-.linkDecoration:visited,
-.activeLink:link,
-.activeLink:visited {
+.link-decoration:link,
+.link-decoration:visited,
+.active-link:link,
+.active-link:visited {
 	text-decoration: none;
 }
 
-.linkDecoration:link,
-.linkDecoration:visited
+.link-decoration:link,
+.link-decoration:visited
 {
 	color: #838994;
 }
 
 /* higlight links on hover */
-.navLinks > .linkDecoration:hover {
+.nav-links > .link-decoration:hover {
 	cursor: pointer;
 	color: #333333;
 }
 /* bold the active web page link */
-.activeLink:link,
-.activeLink:visited,
-.activeLink > .linkDecoration:hover {
+.active-link:link,
+.active-link:visited,
+.active-link > .link-decoration:hover {
 	color: #4c5058;
 	font-weight: 500;
 }
@@ -167,7 +177,7 @@ body {
 /************************/
 /*  INTRODUCTION MODULE */
 /************************/
-.introModule {
+.intro-module {
 	margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
 	background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
 	background-repeat: no-repeat;
@@ -177,11 +187,11 @@ body {
 	color: white;
 }
 
-.bigButton {
+.big-button {
 	color: white;
 }
 
-.bigButton {
+.big-button {
 	background-color: #f15a29;
 	border-color: #f15a29;
 	border-radius: 4px;
@@ -192,7 +202,7 @@ body {
 	line-height: 1.33em;
 }
 
-.bigButton:hover {
+.big-button:hover {
 	cursor: pointer;
 	background-color: #d9400e;
 	border-color: #cf3d0e;
@@ -212,7 +222,7 @@ body {
 	flex: 1 auto;
 }
 
-.theWhat.subText{
+.the-what.sub-text{
 	font-weight: 400;
 	margin: 40px;
 	border: 1px solid orangered;
@@ -225,16 +235,16 @@ body {
 	border: 1px solid orangered;
 
 }
-.groupContain {
+.group-container {
 	display: inline-flex;
 	margin: 5px; /*remove*/
 	border: 5px solid purple;
 }
 
-.totalContain {
+.total-container {
 	display: inline-flex;
 	align-items: center;        /*  to center the .introContain	 */
-	justify-content: center;		/*	within this .introModule     */
+	justify-content: center;		/*	within this .intro-module     */
 	flex-flow: column wrap;
 	margin: 5px; /*remove*/
 	border: 5px solid red;
