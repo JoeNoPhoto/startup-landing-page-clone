@@ -1,8 +1,5 @@
 
-
-/*************/
 /* CSS RESET */
-/*************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,222 +43,188 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*****************/
 /* END CSS RESET */
-/*****************/
 
-/*********************************/
-/* CONTAINER BORDERS FOR TESTING */
-/*********************************/
-.intro-container {
-	border: 3px solid pink;
-}
-
-/*************************************/
-/* END CONTAINER BORDERS FOR TESTING */
-/*************************************/
-
-
-/***********/
 /* GLOBALS */
-/***********/
 body {
-	font-family: 'Roboto', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-size: 1.04rem;
-	font-weight: 300;
-	text-align: center;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.04rem;
+  font-weight: 300;
+  text-align: center;
 }
 
-.head-text{
-	font-weight: 300;
-	font-size: 3em;
+.head-text {
+  font-weight: 300;
+  font-size: 3em;
 }
 
-.sub-text {
-	font-size: 1.563em;
+.sub-text {  font-size: 1.563em; }
+
+.intro-module,
+.the-what-module {  height: 659px; }
+
+/*places the content in the dead center of a container*/
+.intro-module,
+.the-what-module {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-.intro-module, .the-what-module {
-	height: 659px;
-}
-.intro-module, .the-what-module {
-	display: flex;              /* These 3 lines allowed me    */
-	align-items: center;        /* Place the content container in		*/
-	justify-content: center;    /* the dead center of the module		*/
-}
-
-/***************/
 /* END GLOBALS */
-/***************/
 
-/******************/
 /* NAVIGATION BAR */
-/******************/
-.top-nav{
-	/* Fixed Nav POsition Code */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-	width: 100%;
-	height: 70px;
-	background-color: white;
+.top-nav {
+  /* Fixed Nav POsition Code */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 70px;
+  background-color: white;
 }
 
 .top-nav,
 .nav-link-container,
 .nav-asset-container,
-.nav-links
-{
-	display: flex;  /* 	From how I understand it, flex and inline-flex are an updated version of block and inline-block? */
-}
-/*logo, duh*/
+.nav-links {  display: flex;}
+
 .logo {
-	height: 70px;
-	width: 27px;
+  height: 70px;
+  width: 27px;
 }
 
-/*Logo & Link container*/
 .nav-asset-container {
-	padding: 0 1.5%;   /* sets the padding of the interior container */
-	margin: 0 auto;    /* centers the container to the middle of the screen */
-	width: 57.5%;
-	height: 70px;
-	flex-flow: row-reverse nowrap;  /* row-reverse displays log & links back-->front nowrap keeps them on the same line*/
-	justify-content: space-between; /* Positions the logo and the link container on opposite sites of the group container*/
+  padding: 0 1.5%;
+  margin: 0 auto;
+  width: 57.5%;
+  height: 70px;
+  flex-flow: row-reverse nowrap; /* row-reverse displays log & links back-->front nowrap keeps them on the same line*/
+  justify-content: space-between; /* Positions the logo and the link container on opposite sites of the group container*/
 }
 
-/*navigation links*/
-.nav-links {
-	margin-left: 25px;
-}
+.nav-links {  margin-left: 25px; }
 
-/*link container*/
 .nav-link-container {
-	margin: auto 0;
-	flex-wrap: nowrap;
+  margin: auto 0;
+  flex-wrap: nowrap;
 }
 
 .link-decoration:link,
 .link-decoration:visited,
 .active-link:link,
-.active-link:visited {
-	text-decoration: none;
-}
+.active-link:visited {  text-decoration: none ;}
 
 .link-decoration:link,
-.link-decoration:visited
-{
-	color: #838994;
-}
+.link-decoration:visited {  color: #838994; }
 
 /* higlight links on hover */
 .nav-links > .link-decoration:hover {
-	cursor: pointer;
-	color: #333333;
+  cursor: pointer;
+  color: #333333;
 }
+
 /* bold the active web page link */
 .active-link:link,
 .active-link:visited,
 .active-link > .link-decoration:hover {
-	color: #4c5058;
-	font-weight: 500;
+  color: #4c5058;
+  font-weight: 500;
 }
-/**************************/
 /*  END NAVIGATION BAR */
-/**************************/
 
-/************************/
 /*  INTRODUCTION MODULE */
-/************************/
 .intro-module {
-	margin-top: 70px;   /* moved everthing down below the fixed navigation bar*/
-	background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom center;
-	height: 659px;
-	color: white;
+  margin-top: 70px; /* moves everthing down below the fixed navigation bar*/
+  background: url(https://dl.dropboxusercontent.com/u/39027906/first-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 659px;
+  color: white;
 }
+.button-container { margin: 25px;}
+
+.big-button {  color: white; }
 
 .big-button {
-	color: white;
-}
-
-.big-button {
-	background-color: #f15a29;
-	border-color: #f15a29;
-	border-radius: 4px;
-	border-style: none;
-	width: 160px;
-	padding: 16px 24px;
-	font-size: 1.125em;
-	line-height: 1.33em;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  border-radius: 4px;
+  border-style: none;
+  width: 160px;
+  padding: 16px 24px;
+  font-size: 1.125em;
+  line-height: 1.33em;
 }
 
 .big-button:hover {
-	cursor: pointer;
-	background-color: #d9400e;
-	border-color: #cf3d0e;
+  cursor: pointer;
+  background-color: #d9400e;
+  border-color: #cf3d0e;
 }
-/****************************/
 /*  END INTRODUCTION MODULE */
-/****************************/
 
-/******************************/
 /*  "WHAT DO THEY DO?" MODULE */
-/******************************/
-.icon {
-	border: 1px solid orangered;
-	padding: 7.5px;
-	width: 127px;
-	display: inline-flex;
-	flex: 1 auto;
-}
-
-.the-what.sub-text{
-	font-weight: 400;
-	margin: 40px;
-	border: 1px solid orangered;
-}
-
-.innerContain {
-	display: flex;
-	flex-flow: row;
-	align-items: center;
-	border: 1px solid orangered;
-
-}
-.group-container {
-	display: inline-flex;
-	margin: 5px; /*remove*/
-	border: 5px solid purple;
-}
-
 .total-container {
-	display: inline-flex;
-	align-items: center;        /*  to center the .introContain	 */
-	justify-content: center;		/*	within this .intro-module     */
-	flex-flow: column wrap;
-	margin: 5px; /*remove*/
-	border: 5px solid red;
-	min-width: 1000px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  min-width: 1000px;
+  font-weight: 400;
 }
 
-.groupIconTextContain{
-	border: 1px solid purple;
+.head-container {  margin: 25px; }
+
+.group-container {  display: inline-flex; }
+
+.icon {
+  padding: 7.5px;
+  width: 127px;
+  display: inline-flex;
+  flex: 1 auto;
 }
-/*********************************/
+
+.the-what.sub-text {  margin: 20px; }
+
+
 /* END "WHAT DO THEY DO?" MODULE */
-/*********************************/
 
-/******************/
 /*  FOOTER MODULE */
-/******************/
+.footer-container {
+  display: inline-flex;
+  flex-direction: column;
+  padding-bottom: 150px;
+}
 
-/*********************/
+hr {
+	color: #eaebec;
+	width: 70%;
+}
+
+.fa {
+  border-radius: 100px;
+  box-shadow: 0 0 2px #888;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.fa-twitter {  color: #55acee; }
+
+.fa-facebook {  color: #4c66a4; }
+
+.fa-instagram {  color: #3f729b; }
+
+.footer-jointext {  font-weight: 400; }
+
+.footer-copyright {
+	color: #838994;
+	font-size: .75em;
+}
 /* END FOOTER MODULE */
-/*********************/
